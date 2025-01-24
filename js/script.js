@@ -144,7 +144,7 @@ for (let i = 0; i < productsDisplays.length; i++) {
     element.outerHTML = getDisplay(item)
     usedItems.unshift(item)
     element.onclick = _=>{
-        window.location.pathname = "product.html"
+        window.location.pathname = "MV-Matio/product.html"
     }
     i--
     
