@@ -17,7 +17,7 @@ class product {
 function getDisplay(obj) {
     let contener = document.createElement('div');
     contener.setAttribute('details', JSON.stringify(obj))
-    contener.setAttribute('onclick', `localStorage.product = this.getAttribute("details"); window.location.pathname = 'product.html'`)
+    contener.setAttribute('onclick', `localStorage.product = this.getAttribute("details"); window.location.pathname = 'MV-Matio/product.html'`)
     contener.classList.add('productDisplayReal')
     let img = document.createElement('img');
     
