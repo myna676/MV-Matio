@@ -17,7 +17,7 @@ class product {
 function getDisplay(obj) {
     let contener = document.createElement('div');
     contener.setAttribute('details', JSON.stringify(obj))
-    contener.setAttribute('onclick', `localStorage.product = this.getAttribute("details"); window.location.pathname = 'MV-Matio/product.html'`)
+    contener.setAttribute('onclick', `localStorage.product = this.getAttribute("details"); window.location.pathname = 'product.html'`)
     contener.classList.add('productDisplayReal')
     let img = document.createElement('img');
     
@@ -144,7 +144,7 @@ for (let i = 0; i < productsDisplays.length; i++) {
     element.outerHTML = getDisplay(item)
     usedItems.unshift(item)
     element.onclick = _=>{
-        window.location.pathname = "MV-Matio/product.html"
+        window.location.pathname = "product.html"
     }
     i--
     
